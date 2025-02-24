@@ -118,6 +118,22 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
+.bg-image {
+  background-image: url('images/bg_1.png');
+  height: 720px;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency if needed */
+}
+
 
 
 </style>
@@ -150,8 +166,10 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
+	          	<div class="one-third js-fullheight order-md-last img bg-image">
+ 							 <div class="overlay"></div>
+					
+
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
